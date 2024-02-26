@@ -5,6 +5,17 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Jet Strike</title>
+
+  <script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+      if (/Mobi/.test(navigator.userAgent)) {
+        if (window.matchMedia("(orientation: portrait)").matches) {
+          alert("Please rotate your device for the best experience");
+        }
+      }
+    });
+  </script>
+  
 </head>
 
 <body>
